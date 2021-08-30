@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body {    
+    background-color: #FFFFFF;
+    font-family:Arial, sans-serif,"Helvetica Neue", Helvetica, ;
+    font-size: 0.9em;	
+    color: #474747;    
+}
+.categories {  
+    flex: auto;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8f0f0;
+    width: 70%;    
+    overflow: auto;	
+    border-radius: 10px;
+}
+ .categories h1 {
+    text-align: center;
+ }
+
+.leftsidebar {  
+    flex: auto;     
+	width: 25%;
+	height: 500px;
+	float: left;
+    border-right: thin solid #5F5F5F;
+    padding-left: 2em;
+}
+
+.nav li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+    font-size: 1.5em;
+	list-style-type: none;
+	border-bottom: thin solid #5F5F5F;
+	color: #4C4C4C;
+}
+
+input[type='radio'] { 
+    transform: scale(1.5); 
+}
+.nav li input {
+    font-size: medium;
+}
+.text {
+    margin-left: 0.5em;
+}
+
+.main { 
+    flex: auto;          
+	width: 60%;    
+	float: left;   
+    margin-top: 20px;
+    text-align: center;
+    font-size: large;
+	
+}
+
+.main p{
+    margin-top: 10px;
+}
+
+/* On screens that are 992px or less */
+@media only screen and (max-width: 992px) {
+    .categories {  
+        flex: auto;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f8f0f0;
+        width: 90%;    
+        overflow: auto;	
+        border-radius: 10px;
+    }
+}
+
+/* On screens that are 600px or less */
+@media only screen and (max-width: 600px) {
+    .categories {  
+        flex: auto;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f8f0f0;
+        width: 100%;    
+        overflow: auto;	
+        border-radius: 10px;
+    }
+  }
